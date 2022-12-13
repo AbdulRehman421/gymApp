@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
     return (
         <section className=' flex mt-5 flex-col-reverse md:flex-row text-center md:text-left' id='hero'>
-            <div className=' md:w-2/3 flex flex-col justify-center ml-5'>
+            <div className=' md:w-2/3 flex flex-col justify-center md:ml-5'>
                 <h2 className=' text-4xl md:text-7xl leading-none tracking-wide font-bold'>
                     Smart <span className=' text-violet-500'> fitness </span> experience for everyone.
                 </h2>

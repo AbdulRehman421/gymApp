@@ -8,7 +8,7 @@ function Review(props) {
             </div>
             <div className=' flex flex-col justify-center md:p-10 text-lg font-medium tracking-tight md:mx-10 w-80 md:w-96'>
                 <i class="fa-solid fa-quote-left text-3xl my-5"></i>
-                <p className=' md:w-auto pb-7 border-b border-stone-500'>
+                <p className=' md:w-auto w-11/12 pb-7 border-b border-stone-500'>
                     {props.review}
                 </p>
                 <div className=' w-full ' >
