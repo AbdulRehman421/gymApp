@@ -8,10 +8,13 @@ const Header = () => {
     const handleDrop = () => {
         setShowNav(prev => !prev)
     }
+    const hideNav = () => {
+        setShowNav(false)
+    }
 
 
     return (
-        <nav className={`flex  md:justify-between sticky top-0 drop-shadow-lg md:flex-row bg-orange-50 z-50 ${showNav ? 'flex-col h-full  ' : ''}`} >
+        <nav className={`flex  md:justify-between sticky top-0 drop-shadow-lg md:flex-row bg-orange-50 z-50 ${showNav ? 'flex-col h-full ' : ''}`} >
             <div className="  p-4 cursor-pointer w-1/3">
                 <h1 className=' text-5xl font-bold'>
                     <span className=' text-violet-500'>
@@ -33,33 +36,33 @@ const Header = () => {
                 id='navItems' >
                 <ul className='md:flex justify-evenly text-lg '>
                     <Link to="hero" spy={true} smooth={true} offset={50} duration={500} className=' font-medium  px-5'>
-                        <li className='cursor-pointer hover:text-violet-500' onClick={handleDrop}>
+                        <li className='cursor-pointer hover:text-violet-500' onClick={hideNav}>
                             Home
                         </li>
                     </Link>
                     <Link to="trainers" spy={true} smooth={true} offset={50} duration={500} className=' font-medium px-5'>
-                        <li className=' cursor-pointer hover:text-violet-500' onClick={handleDrop}>
+                        <li className=' cursor-pointer hover:text-violet-500' onClick={hideNav}>
                             Trainers
                         </li>
                     </Link>
                     <Link to="programs" spy={true} smooth={true} offset={50} duration={500} className=' font-medium  px-5'>
-                        <li className=' cursor-pointer hover:text-violet-500' onClick={handleDrop}>
+                        <li className=' cursor-pointer hover:text-violet-500' onClick={hideNav}>
                             Programs
                         </li>
                     </Link>
                     <Link to="membership" spy={true} smooth={true} offset={50} duration={500} className=' font-medium  px-5'>
-                        <li className=' cursor-pointer hover:text-violet-500' onClick={handleDrop}>
+                        <li className=' cursor-pointer hover:text-violet-500' onClick={hideNav}>
                             Membership
                         </li>
                     </Link>
                     <Link to="testimonials" spy={true} smooth={true} offset={50} duration={500} className=' font-medium  px-5'>
-                        <li className=' cursor-pointer hover:text-violet-500' onClick={handleDrop}>
+                        <li className=' cursor-pointer hover:text-violet-500' onClick={hideNav}>
                             Testimonials
                         </li>
                     </Link>
 
                 </ul>
-                <div className='  ' onClick={handleDrop}>
+                <div className='  ' onClick={hideNav}>
                     <button className=' border-2 border-violet-500 font-medium bg-violet-500 text-white py-2 px-5 rounded-3xl  hover:text-violet-500 hover:bg-white'>
                         Sign in
                     </button>
