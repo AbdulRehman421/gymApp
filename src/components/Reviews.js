@@ -7,7 +7,7 @@ const Reviews = () => {
     const img2 = "/images/client2.png"
     const img3 = "/images/client3.png"
     return (
-        <section className='w-4/5 text-left mx-auto pb-10' id='testimonials'>
+        <section className='w-4/5 text-left md:mx-auto mx-5 pb-10' id='testimonials'>
             <h2 className=' text-5xl font-bold text-center mt-10 pb-10'>
                 Happiest  <span className='text-violet-500'>Trainee </span>Reviews
             </h2>

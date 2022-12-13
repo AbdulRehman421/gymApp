@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className=' bg-gray-900 text-left text-white'>
             <div className=' flex flex-col md:flex-row items-center border-b-2 border-white justify-between'>
-                <div className=' m-5 p-5 pt-10'>
+                <div className=' md:m-5 md:p-5 pt-10'>
                     <h2 className=' text-4xl font-bold'>
                         <span className=' text-violet-500'> Fit</span>Me
                     </h2>
@@ -13,21 +13,18 @@ const Footer = () => {
                     </h3>
                 </div>
 
-                <div className=' flex justify-around mx-5 my-5'>
+                <div className=' flex justify-around mx-5 my-5 '>
 
-                    <div className=''>
+                    <div className=' text-center mr-16 md:text-left md:mr-0'>
                         <h2 className=' text-lg font-bold text-gray-400 my-3'>ABOUT</h2>
-                        <div className='' >
+                        <div className=' ' >
                             <h3 className=' hover:text-violet-500 my-2  p-1'>Home</h3>
                             <h3 className=' hover:text-violet-500 my-2  p-1'>Trainers</h3>
                             <h3 className=' hover:text-violet-500 my-2  p-1'>Programs</h3>
-
-                            <h3 className=' hover:text-violet-500 my-2  p-1'>Reviews</h3>
-
                         </div>
 
                     </div>
-                    <div>
+                    <div className=' text-center ml-16  md:text-left md:ml-0'>
                         <h2 className=' text-lg font-bold  text-gray-400 my-3'>PRODUCT</h2>
                         <div className=''>
                             <h3 className=' hover:text-violet-500 my-2  p-1'>How it works</h3>

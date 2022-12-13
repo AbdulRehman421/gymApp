@@ -33,33 +33,33 @@ const Header = () => {
                 id='navItems' >
                 <ul className='md:flex justify-evenly text-lg '>
                     <Link to="hero" spy={true} smooth={true} offset={50} duration={500} className=' font-medium  px-5'>
-                        <li className='cursor-pointer hover:text-violet-500'>
+                        <li className='cursor-pointer hover:text-violet-500' onClick={handleDrop}>
                             Home
                         </li>
                     </Link>
                     <Link to="trainers" spy={true} smooth={true} offset={50} duration={500} className=' font-medium px-5'>
-                        <li className=' cursor-pointer hover:text-violet-500'>
+                        <li className=' cursor-pointer hover:text-violet-500' onClick={handleDrop}>
                             Trainers
                         </li>
                     </Link>
                     <Link to="programs" spy={true} smooth={true} offset={50} duration={500} className=' font-medium  px-5'>
-                        <li className=' cursor-pointer hover:text-violet-500'>
+                        <li className=' cursor-pointer hover:text-violet-500' onClick={handleDrop}>
                             Programs
                         </li>
                     </Link>
                     <Link to="membership" spy={true} smooth={true} offset={50} duration={500} className=' font-medium  px-5'>
-                        <li className=' cursor-pointer hover:text-violet-500'>
+                        <li className=' cursor-pointer hover:text-violet-500' onClick={handleDrop}>
                             Membership
                         </li>
                     </Link>
                     <Link to="testimonials" spy={true} smooth={true} offset={50} duration={500} className=' font-medium  px-5'>
-                        <li className=' cursor-pointer hover:text-violet-500'>
+                        <li className=' cursor-pointer hover:text-violet-500' onClick={handleDrop}>
                             Testimonials
                         </li>
                     </Link>
 
                 </ul>
-                <div className='  '>
+                <div className='  ' onClick={handleDrop}>
                     <button className=' border-2 border-violet-500 font-medium bg-violet-500 text-white py-2 px-5 rounded-3xl  hover:text-violet-500 hover:bg-white'>
                         Sign in
                     </button>
